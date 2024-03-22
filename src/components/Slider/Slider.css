@@ -1,0 +1,84 @@
+
+.slider-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 6em;
+    width: 20em;
+    border: 1px solid #d7d7d7;
+    border-radius: 4px;
+    padding: 15px 25px;
+    margin: 2em 2em;
+}
+
+.slider-box .slider-value span{
+    position: absolute;
+    font-size: 1em;
+    width: 2.25em;
+    height: 2.25em;
+    background: #0f0f0f;
+    color: #ffffff;
+    transform: translateY(-30%) translateX(-50%);
+    border-radius: 4px;
+    line-height: 2.25em;
+}
+
+.slider-box .slider-value span::after{
+    position: absolute;
+    content: "";
+    width: 1em;
+    height: 1em;
+    background: #0f0f0f;
+    color: #ffffff;
+    transform: translateY(130%) rotate(45deg);
+    left: 25%;
+    z-index: -1;
+    
+}
+
+.slider-box .slider-input{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.slider-box .slider-input input{
+    appearance: none;
+    height: 1em;
+    width: 24em;
+    border-radius: 99px;
+}
+
+.slider-box .slider-input input::-webkit-slider-thumb{
+    appearance: none;
+    width: 1.75em;
+    height: 1.75em;
+    background: #47b647;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 6px solid #ffffff;
+
+
+}
+
+.slider-box .slider-input input::-webkit-slider-thumb:hover {
+    border-color: #edfaed;
+}
+  
+.slider-box .slider-input input:focus::-webkit-slider-thumb {
+    border-color: -webkit-linear-gradient(0deg, rgba(237,250,237,1) 50%, rgba(71,182,71,1) 50%);
+}
+  
+
+
+
+
+
+
+
+
+/* Hover #edfaed */
+
